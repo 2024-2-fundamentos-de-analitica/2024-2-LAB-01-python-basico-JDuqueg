@@ -52,7 +52,7 @@ def pregunta_08():
      (9, ['A', 'B', 'C', 'E'])]
 
     """
-    sequence = load_input('files\input')
+    sequence = load_input('files/input')
     sequence = shuffle_and_sort(sequence)
     sequence = reducer(sequence)
     sequence = shuffle_and_sort(sequence)

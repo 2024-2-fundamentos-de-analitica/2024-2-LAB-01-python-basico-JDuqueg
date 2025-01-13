@@ -40,7 +40,7 @@ def pregunta_10():
 
 
     """
-    sequence = load_input('files\input')
+    sequence = load_input('files/input')
     sequence = pre_processing(sequence)
 
 

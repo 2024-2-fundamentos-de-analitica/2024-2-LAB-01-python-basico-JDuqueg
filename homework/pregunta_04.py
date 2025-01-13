@@ -60,7 +60,7 @@ def pregunta_04():
      ('12', 3)]
 
     """
-    sequence = load_input('files\input')
+    sequence = load_input('files/input')
     sequence = filter(sequence)
     sequence = mapper(sequence)
     sequence = shuffle_and_sort(sequence)

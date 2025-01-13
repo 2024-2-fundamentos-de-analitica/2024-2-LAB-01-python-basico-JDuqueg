@@ -81,7 +81,7 @@ def pregunta_06():
      ('jjj', 5, 17)]
 
     """
-    sequence = load_input('files\input')
+    sequence = load_input('files/input')
     sequence = line_processing(sequence)
     sequence = mapper(sequence)
     sequence = shuffle_and_sort(sequence)

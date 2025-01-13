@@ -40,7 +40,7 @@ def pregunta_03():
     [('A', 53), ('B', 36), ('C', 27), ('D', 31), ('E', 67)]
 
     """
-    sequence = load_input('files\input')
+    sequence = load_input('files/input')
     sequence = shuffle_and_sort(sequence)
     sequence = reducer(sequence)
 

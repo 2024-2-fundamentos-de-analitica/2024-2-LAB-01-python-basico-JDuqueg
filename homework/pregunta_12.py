@@ -43,7 +43,7 @@ def pregunta_12():
     {'A': 177, 'B': 187, 'C': 114, 'D': 136, 'E': 324}
 
     """
-    sequence = load_input('files\input')
+    sequence = load_input('files/input')
     sequence = line_preprocessing(sequence)
     sequence = dict_keys(sequence)
 

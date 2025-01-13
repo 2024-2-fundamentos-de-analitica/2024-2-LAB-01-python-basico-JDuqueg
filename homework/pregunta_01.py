@@ -31,7 +31,7 @@ def pregunta_01():
     214
 
     """
-    sequence = load_input("files\input")
+    sequence = load_input("files/input")
     sequence = selecter (sequence)
     sequence = sum(sequence)
 

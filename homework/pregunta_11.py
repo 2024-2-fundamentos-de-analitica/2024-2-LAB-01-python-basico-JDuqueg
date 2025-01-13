@@ -37,7 +37,7 @@ def pregunta_11():
 
 
     """
-    sequence = load_input('files\input')
+    sequence = load_input('files/input')
     sequence = dict_keys(sequence)
 
     return sequence

@@ -57,7 +57,7 @@ def pregunta_09():
      'jjj': 18}}
 
     """
-    sequence = load_input('files\input')
+    sequence = load_input('files/input')
     sequence = line_processing(sequence)
     sequence = mapper(sequence)
     sequence = reducer(sequence)

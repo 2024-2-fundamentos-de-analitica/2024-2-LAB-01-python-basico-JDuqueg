@@ -50,7 +50,7 @@ def pregunta_07():
      (9, ['A', 'B', 'E', 'A', 'A', 'C'])]
 
     """
-    sequence = load_input('files\input')
+    sequence = load_input('files/input')
     sequence = reducer(sequence)
     sequence = shuffle_and_sort(sequence)
 
