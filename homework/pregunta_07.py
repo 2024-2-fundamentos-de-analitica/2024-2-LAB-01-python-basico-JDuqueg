@@ -4,6 +4,31 @@ datos requeridos se encuentran en el archivo data.csv. En este laboratorio
 solo puede utilizar las funciones y librerias basicas de python. No puede
 utilizar pandas, numpy o scipy.
 """
+import fileinput
+import glob
+
+def load_input(input_directory):
+    """Funcion load_input"""
+    sequence = []
+    files = glob.glob(f"{input_directory}/*")
+    with fileinput.input(files=files) as f:
+        for line in f:
+            sequence.append(line.split('\t')[:2])
+    return sequence
+
+def shuffle_and_sort(sequence):
+    """Shuffle and Sort"""
+    return sorted(sequence, key=lambda x: x[0])
+
+def reducer(sequence):
+    """Reducer"""
+    result = {}
+    for value, key in sequence:
+        key = int(key)
+        if key not in result.keys():
+            result[key] = []
+        result[key].append(value)
+    return list(result.items())
 
 
 def pregunta_07():
@@ -25,3 +50,10 @@ def pregunta_07():
      (9, ['A', 'B', 'E', 'A', 'A', 'C'])]
 
     """
+    sequence = load_input('files\input')
+    sequence = reducer(sequence)
+    sequence = shuffle_and_sort(sequence)
+
+    return sequence
+
+pregunta_07()
